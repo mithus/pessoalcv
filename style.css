@@ -1,0 +1,140 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#header {
+	width: 100%;
+	background-color: #041151;
+	line-height: 50px;
+	height: 50px;
+	display: block;
+	position: fixed;
+}
+
+#menu {
+	width: 800px;
+	margin: 0 auto;
+}
+
+li {
+	list-style: none;
+	float: left;
+	margin: 0;
+	height: 50px;
+}
+
+a li {
+	color: #fff;
+	text-decoration: none;
+	padding: 0 20px;
+}
+
+a li:hover {
+	background-color: #2f1d93;
+}
+
+#all {
+	background-color: #c3c3c3;
+}
+
+#content {
+	width: 800px;
+	padding-top: 100px;
+	margin: 0 auto;
+	padding: 0 20px;
+	
+}
+
+h2 {
+	line-height: 30px;
+	color: #262d87;
+}
+
+p {
+	margin: 20px 0 0 20px;
+	font-size: 17px;
+}
+
+#sobre {
+	padding-top: 100px;
+	min-height: 300px;
+}
+
+#formacao {
+	padding-top: 60px;
+	min-height: 300px;
+}
+
+#portifolio {
+	min-height: 300px;
+}
+
+#contato {
+	margin: 20px 0 0 0;
+}
+
+.botao input {
+	float: right;
+	width: 130px;
+	contain: content;
+	margin: 10px 68px 20px 0;
+	height: 30px;
+}
+
+form {
+	border: 1px solid #000;
+	contain: content;
+}
+
+form input[type=text] {
+	float: left;
+	height: 30px;
+	padding: 0 10px;
+	width: 220px;
+}
+
+form textarea {
+	padding: 0 10px;
+	line-height: 25px;
+}
+
+.forumulario {
+	height: auto;
+}
+
+.formulario div {
+	width: 100%;
+	height: 30px;
+	margin: 20px 0;
+}
+
+.icon {
+	height: 40px;
+	width: 40px;
+	margin: 10px 0 0 20px;
+}
+
+form label {
+	float: left;
+	margin: 0 30px;
+	width: 100px;
+	padding: 5px 10px;
+	color: #262d87;
+}
+
+form textarea {
+	width: 70%;
+	height: 200px;
+	resize: none;
+}
+
+.topo {
+	text-decoration: none;
+	color: #898989;
+}
+
+.topo:hover {
+	color: #000;
+}

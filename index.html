@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Portifólio Pessoal</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<div id="all"> <!-- Div geral para controlar todo o corpo do site -->
+			<div id="header">
+				<div id="menu"> <!-- Menu horizontal -->
+					<ul>
+						<a href="#sobre" ><li>SOBRE</li></a><a href="#formacao"><li>FORMAÇÃO</li></a><a href="#portifolio" ><li>PORTIFÓLIO</li></a><a href="#contato" ><li>CONTATO</li></a>
+					</ul>
+				</div>
+			</div>
+			<div id="content"> <!-- Div principal -->
+				<div id="sobre"> <!-- tag id para linkar com o clique do menu -->
+					<h2>Sobre mim</h2>
+					<p><img class="avatar" src="css/eu.jpg" alt="Foto pessoal" title="Eu"></p>
+					<p>Meu nome é Márcio Henrique Ribeiro Machado, nascido em Santa Rita do Sapucaí, sul de Minas Gerais.</p>
+					<p>Sempre gostei de computadores e jogos, o que me levou a minha área de atuação.</p>
+					<p>Gosto de filmes, séries, esportes, principalmente o Rugby.</p>
+				</div>
+				<div id="formacao">
+					<h2>Formação</h2>
+					<p>Técnico em Informática - Colégio Tecnológio Dr Delfim Moreira</p>
+					<p>Inglês Intermediário</p>
+					<p>Sistemas de Informação - Universidade Tecnológica Federal do Paraná - Não concluído</p>
+					<p>Análise e Desenvolvimento de Sistemas - UNINTER - Em curso</p>
+				</div>
+				<div id="portifolio">
+					<h2>Portifólio</h2>
+					<p>Já desenvolvi alguns sites, porém apenas por hobbie.</p>
+				</div>
+				<div id="contato">
+					<h2>Contato</h2>
+					<p>Clique no ícone abaixo para enviar uma mensagem. ;)</p>
+					
+					<img class="icon" onclick="mostrarFormulario()" src="css/mensagem.png" alt="Abrir formulário" title="Ícone imagem"> <!-- Imagem que aciona o script para mostrar o formulário -->
+					
+					<form id="form" style="display: none;"> <!-- formulário para contato, que começa escondido e é mostrado com o clique -->
+						<div class="formulario">
+							<div>
+								<label for="nome">NOME</label>
+								<input type="text" name="nome" placeholder="Seu nome"/>
+							</div>
+							<div>
+								<label for="email">EMAIL</label>
+								<input type="text" name="email" placeholder="Seu email">
+							</div>
+							
+						</div>
+						<div>						
+							<label for="mensagem">MENSAGEM</label>
+							<textarea name="mensagem" placeholder="Insira seu texto"></textarea>
+						</div>
+						<div class="botao">
+							<input type="submit" name="email" value="ENVIAR">
+						</div>
+					</form>
+				</div>
+				<p><a class="topo" href="#all" >TOPO</a></p><!-- Retorna ao ínicio do site -->
+			</div>
+				
+		</div>
+		
+		<script> <!--script para mostrar o formulário que está escondido -->
+			function mostrarFormulario() {
+				const form = document.getElementById('form');
+				form.style.display = form.style.display === 'none' ? 'block' : 'none';
+			}
+		</script>
+	</body>
+
+</html>
